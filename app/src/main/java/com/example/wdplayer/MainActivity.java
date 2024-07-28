@@ -21,31 +21,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         request_Permission();
-//        Init();
+        Init();
     }
 
-//    private void Init() {
-//        Button mediaPlay = findViewById(R.id.btn_play);
-//        mediaPlay.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Intent intent = null;
-////                //从MainActivity页面跳转到FunctionActivity页面
-////                intent = new Intent(MainActivity.this, MainActivity2.class);
-////                startActivity(intent);
-//                switch (view.getId()){
-//                    case R.id.btn_play:
-////                        Log.d(TAG,"I am click");
-//                        Toast.makeText(this,"onclick",Toast.LENGTH   _SHORT).show();
-////
-////                    case R.id.btn_play:
-////                        Log.d(TAG,"I am click");
-//                default:
-//                    break;
-//                }
-//            }
-//        });
-//    }
+    private void Init() {
+        Button mediaPlay = findViewById(R.id.btn_play);
+        mediaPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                switch (view.getId()){
+                    case R.id.btn_play:
+                        Intent intent = null;
+                        intent = new Intent(MainActivity.this, MediaPlayerActivity.class);
+                        startActivity(intent);
+                default:
+                    break;
+                }
+            }
+        });
+    }
 
 //    public void onClick(View view) {
 //        switch (view.getId()){
