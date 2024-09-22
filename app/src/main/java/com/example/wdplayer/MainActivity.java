@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MainActivityTag";
+    private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         mediaPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 switch (view.getId()){
                     case R.id.btn_play:
                         Intent intent = null;
